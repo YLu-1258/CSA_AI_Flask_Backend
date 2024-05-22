@@ -12,6 +12,7 @@ from api.joke import joke_api
 from api.user import user_api 
 from api.player import player_api
 from api.titanic import titanic_api
+from api.stock import stock_api
 # database Initialization functions
 from model.users import User, initUsers 
 from model.players import initPlayers
@@ -30,6 +31,7 @@ app.register_blueprint(covid_api)
 app.register_blueprint(user_api) 
 app.register_blueprint(player_api)
 app.register_blueprint(titanic_api)
+app.register_blueprint(stock_api)
 # register URIs for server pages
 app.register_blueprint(algorithm_views) 
 app.register_blueprint(recipe_views) 
